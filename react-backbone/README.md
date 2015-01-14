@@ -2,9 +2,9 @@
 
 Using react to enhance backbone view.
 
-### Technology Stack
+## Technology Stack
 
-#### Library
+### Library
 
 - React
 - Backbone
@@ -17,7 +17,7 @@ Using react to enhance backbone view.
 - Semantic UI
 
 
-### Tested on
+## Tested on
 
 - Chrome 39.0.2171.99 m
 
