@@ -2,7 +2,7 @@
 
 Using react to enhance backbone view.
 
-## Technology Stack
+### Technology Stack
 
 #### Library
 
@@ -12,12 +12,12 @@ Using react to enhance backbone view.
 - Lodash
 - RequireJs
 
-## UI Framework
+### UI Framework
 
 - Semantic UI
 
 
-## Tested on
+### Tested on
 
 - Chrome 39.0.2171.99 m
 
