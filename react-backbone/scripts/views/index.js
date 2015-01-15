@@ -12,7 +12,7 @@ define([
 			render: function () {
 				this.$el.appendTo($(document.body));
 
-				React.renderComponent(new components.users({
+				React.render(new components.users({
 						users: this.collection
 					}),
 					this.$el.get(0)
