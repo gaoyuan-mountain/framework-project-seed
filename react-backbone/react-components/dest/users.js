@@ -12,7 +12,7 @@ define([
 					var $el = $(el);
 					this.setPopup(el);
 
-					//$el.transition('fade');
+					$el.transition('fade in');
 
 					this.props.user.on('change', function() {
 						this.forceUpdate();
