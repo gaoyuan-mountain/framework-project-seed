@@ -1,0 +1,8 @@
+{
+  "name": "mongodn-node-angularjs",
+  "version": "0.1.0",
+  "devDependencies": {},
+  "dependencies": {
+    "hbs": "^2.8.0"
+  }
+}

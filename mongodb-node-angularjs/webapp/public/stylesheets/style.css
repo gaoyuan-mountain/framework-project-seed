@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.icon {
+	position: relative;
+	top: 12px;
+}
+
+.constraint {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.control-contraint {
+	text-align: center;
+	margin-top: 30px;
+}

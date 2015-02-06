@@ -1,0 +1,55 @@
+<div class="constraint">
+	<div class="ui divided list">
+		<div class="item" ng-repeat="user in models.users">
+			<div class="right floated">
+				<i class="remove icon link" title="delete" ng-click="actions.removeUser(user, $index)"></i>
+			</div>
+			<img class="ui avatar image" ng-src="{[{user.avatar}]}" ng-click="actions.showEditModal(user)" />
+			<div class="content">
+				<div class="header">{[{user.name}]}</div>
+			</div>
+		</div>
+	</div>
+	<div class="control-contraint">
+		<div class="ui inverted tiny blue button" ng-click="actions.showAddModal()">Add a new user</div>
+	</div>
+	
+	<!-- user detail modal -->
+	<div class="ui modal">
+		<i class="close icon"></i>
+		<div class="header">
+			User
+		</div>
+		<div class="content">
+			<div class="ui form">
+
+				<div class="field">
+					<div class="ui input">
+						<div gy-switch gy-model="models.isMeizi"></div>
+					</div>
+				</div>
+				
+				<div class="field">
+					<div class="ui icon input">
+						<input type="text" placeholder="Name" ng-model="models.user.name">
+						<i class="user icon"></i>
+					</div>
+				</div>
+				
+				<div class="field">
+					<div class="ui icon input">
+						<input type="text" placeholder="Tel" ng-model="models.user.tel">
+						<i class="call icon"></i>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="actions">
+			<div class="ui button">Cancel</div>
+			<div class="ui button" ng-click="actions.saveUser()">Confirm</div>
+		</div>
+	</div>
+	<!-- -->
+	
+</div>

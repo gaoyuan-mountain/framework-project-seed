@@ -54,7 +54,7 @@ define([
 		var users = React.createFactory(
 			React.createClass({
 				componentDidMount: function () {
-					this.props.users.on('reset add remove', function() {
+					this.props.users.on('reset add remove', function () {
 						this.forceUpdate();
 					}.bind(this));
 				},

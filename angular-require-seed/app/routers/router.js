@@ -7,7 +7,7 @@ define([
 	module.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {
-				templateUrl: 'app/templates/list.html',
+				templateUrl: '/',
 				controller: 'listController'
 			})
 			.when('/list', {
