@@ -1,14 +1,13 @@
 'use strict';
 
 var mongoose = require('mongoose'),
-	Schema = mongoose.Schema,
-	crypto = require('crypto');
+    Schema = mongoose.Schema;
 
 var schema = new Schema({
-	name: String,
-	sex: Number,
-	tel: String,
-	avatar: String
+    name: String,
+    sex: Number,
+    tel: String,
+    avatar: String
 });
 
 

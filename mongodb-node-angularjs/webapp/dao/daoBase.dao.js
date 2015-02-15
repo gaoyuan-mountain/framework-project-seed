@@ -44,7 +44,7 @@ daoBase.prototype.remove = function (id, callback) {
 daoBase.prototype.update = function (conditions, update, options, callback) {
     this.model.update(conditions, update, options, function (error) {
         if (error) {
-        	return callback(error);
+            return callback(error);
         }
         return callback(null);
     });
