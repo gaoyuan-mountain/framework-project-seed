@@ -10,5 +10,4 @@ var schema = new Schema({
     avatar: String
 });
 
-
 mongoose.model('user', schema);

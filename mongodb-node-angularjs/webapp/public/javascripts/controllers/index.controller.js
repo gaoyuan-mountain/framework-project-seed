@@ -4,6 +4,20 @@ define([
 
     var module = angular.module('controllers');
 
+    /*
+    //the second type of DI
+    module.controller(function ($scope, userService) {
+        //....
+    });
+    
+    //the third type of DI
+    var indexController = function () {
+        //...
+    };
+    indexController.$inject = ['$scope', 'userService'];
+    module.controller('indexController', indexController);
+    */
+
     module.controller('indexController', [
         '$scope',
         'userService',
