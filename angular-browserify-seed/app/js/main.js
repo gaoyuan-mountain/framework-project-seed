@@ -9,11 +9,12 @@ require('angular-ui-router');
 require('./templates');
 
 angular.module('controllers', []);
+angular.module('services', []);
 
-bulk(__dirname, ['./controllers/**/*.js']);
+bulk(__dirname, ['./controllers/**/*.js', './services/**/*.js']);
 
 angular.element(document).ready(function () {
-	angular.module('app', ['ui.router', 'templates', 'controllers']);
+	angular.module('app', ['ui.router', 'templates', 'controllers', 'services']);
 	
 	angular.module('app').config(require('./router'));
 	

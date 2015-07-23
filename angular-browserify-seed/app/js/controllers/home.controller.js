@@ -6,7 +6,8 @@ var module = angular.module('controllers');
 
 module.exports = module.controller('homeController', [
 	'$scope',
-	function ($scope) {
-		$scope.page = 'this is home page';
+	'userService',
+	function ($scope, userService) {
+		$scope.page = 'Hello!' + userService.getUser();
 	}
 ]);
