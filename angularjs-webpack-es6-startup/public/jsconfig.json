@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs"
+    },
+    "files": [
+        "app/intro/app.js",
+        "app/intro/index/index.module.js",
+        "app/intro/index/index.route.js",
+        "app/todo/app.js",
+        "app/todo/index/index.module.js",
+        "app/todo/index/index.route.js"
+    ]
+}
