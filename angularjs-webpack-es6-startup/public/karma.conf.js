@@ -9,11 +9,10 @@ var preLoaders = [
   {test: /\.js$/, loader: 'isparta', include: include, exclude: /\.spec\.js$/}
 ];
 var loaders = [
-  {test: /\.scss$/, loader: 'style!css?sourceMap!sass?sourceMap&indentedSyntax=true'},
   {test: /\.png$/, loader: 'null'},
   {test: /\.jpg$/, loader: 'null'},
   {test: /\.json$/, loader: 'json'},
-  {test: /\.html$/, loader: 'ng-cache?prefix=[dir]/[dir]'}
+  {test: /\.html$/, loader: 'ngtemplate!html'}
 ];
 
 
