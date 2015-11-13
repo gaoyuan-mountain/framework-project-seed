@@ -11,7 +11,9 @@ module.exports = {
 					}
 					UserService.login($scope.user).then(function (response) {
 						if (response.data.status === 'success') {
-							//$window.location = 'todo.html';
+							$window.location.href = 'todo.html';
+						} else {
+							$window.location.reload();
 						}
 					});
 				};

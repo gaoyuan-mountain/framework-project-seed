@@ -1,38 +1,40 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="10"  lines-covered="10"  line-rate="1"  branches-valid="4"  branches-covered="3"  branch-rate="0.75"  timestamp="1447323044954" complexity="0" version="0.1">
+<coverage lines-valid="12"  lines-covered="12"  line-rate="1"  branches-valid="4"  branches-covered="4"  branch-rate="1"  timestamp="1447395635869" complexity="0" version="0.1">
 <sources>
 	<source>D:\Projects\framework-project-seed\angularjs-webpack-es6-startup\public</source>
 </sources>
 <packages>
-	<package name="index"  line-rate="1"  branch-rate="0.75" >
+	<package name="index"  line-rate="1"  branch-rate="1" >
 	<classes>
-		<class name="index.controller.js"  filename="app\intro\index\index.controller.js"  line-rate="1"  branch-rate="0.75" >
+		<class name="index.controller.js"  filename="app\intro\index\index.controller.js"  line-rate="1"  branch-rate="1" >
 		<methods>
-			<method name="inject"  hits="3"  signature="()V" >
-				<lines><line number="6"  hits="3" /></lines>
+			<method name="inject"  hits="1"  signature="()V" >
+				<lines><line number="6"  hits="1" /></lines>
 			</method>
-			<method name="(anonymous_2)"  hits="3"  signature="()V" >
-				<lines><line number="8"  hits="3" /></lines>
+			<method name="(anonymous_2)"  hits="4"  signature="()V" >
+				<lines><line number="8"  hits="4" /></lines>
 			</method>
-			<method name="(anonymous_3)"  hits="3"  signature="()V" >
-				<lines><line number="10"  hits="3" /></lines>
+			<method name="(anonymous_3)"  hits="4"  signature="()V" >
+				<lines><line number="10"  hits="4" /></lines>
 			</method>
-			<method name="(anonymous_4)"  hits="1"  signature="()V" >
-				<lines><line number="14"  hits="1" /></lines>
+			<method name="(anonymous_4)"  hits="2"  signature="()V" >
+				<lines><line number="14"  hits="2" /></lines>
 			</method>
 		</methods>
 		<lines>
 			<line number="0"  hits="1"  branch="false" />
 			<line number="2"  hits="1"  branch="false" />
-			<line number="4"  hits="3"  branch="false" />
-			<line number="5"  hits="3"  branch="false" />
-			<line number="7"  hits="3"  branch="false" />
-			<line number="8"  hits="3"  branch="false" />
-			<line number="9"  hits="3"  branch="false" />
+			<line number="4"  hits="1"  branch="false" />
+			<line number="5"  hits="1"  branch="false" />
+			<line number="7"  hits="4"  branch="false" />
+			<line number="8"  hits="4"  branch="false" />
+			<line number="9"  hits="4"  branch="false" />
 			<line number="10"  hits="1"  branch="false" />
-			<line number="12"  hits="2"  branch="false" />
-			<line number="13"  hits="1"  branch="false" />
+			<line number="12"  hits="3"  branch="false" />
+			<line number="13"  hits="2"  branch="false" />
+			<line number="14"  hits="1"  branch="false" />
+			<line number="16"  hits="1"  branch="false" />
 		</lines>
 		</class>
 	</classes>
