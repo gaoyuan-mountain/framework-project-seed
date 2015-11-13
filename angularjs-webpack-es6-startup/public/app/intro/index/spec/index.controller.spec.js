@@ -3,7 +3,7 @@ import 'angular-mocks';
 import LoginController from '../index.controller';
 
 describe('Intro Controller', () => {
-	let $controller, $provide;
+	let $controller;
 	let $scope, $timeout, $q, windowMock;
 	let UserServiceMock;
 	angular.module('IntroIndexModule', ['ngMock']);

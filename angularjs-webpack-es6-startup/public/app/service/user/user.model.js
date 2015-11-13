@@ -12,14 +12,14 @@ class User {
 		if (this.hasOwnProperty(key)) {
 			return this[key];
 		} else {
-			throw new Error('There has no property named ' + key + 'in User Object.');
+			throw new Error('There has no property named ' + key + ' in User Object.');
 		}
 	}
 	set(key, value) {
 		if (this.hasOwnProperty(key)) {
 			return this[key] = value;
 		} else {
-			throw new Error('There has no property named ' + key + 'in User Object.');
+			throw new Error('There has no property named ' + key + ' in User Object.');
 		}
 	}
 };
