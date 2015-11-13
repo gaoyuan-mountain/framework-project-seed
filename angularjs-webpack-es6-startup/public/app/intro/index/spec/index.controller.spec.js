@@ -3,31 +3,51 @@ import 'angular-mocks';
 import LoginController from '../index.controller';
 
 describe('Intro Controller', () => {
-	let $scope, ctrl, $timeout;
+	let $controller, $provide;
+	let $scope, $timeout, $q, windowMock;
 	let UserServiceMock;
+	angular.module('IntroIndexModule', ['ngMock']);
+	LoginController.inject();
+
 	beforeEach(() => {
-		angular.module('IntroIndexModule', []);
-		LoginController.inject();
-		UserServiceMock = jasmine.createSpyObj('UserService', ['login', 'getInstance']);
-		angular.mock.module("IntroIndexModule");
-		inject(($rootScope, $controller, $q, _$timeout_) => {
+		angular.mock.module('IntroIndexModule');
+	});
+	
+	beforeEach(() => {
+		inject(($rootScope, _$controller_, _$q_, _$timeout_) => {
 			$scope = $rootScope.$new();
 			$timeout = _$timeout_;
-
-			UserServiceMock.getInstance.and.returnValue({
-				_id: '',
-				name: '',
-				passowrd: ''
-			});
-			UserServiceMock.login.and.returnValue($q.when({
-				data: {
-					status: 'success'
+			$q = _$q_;
+			$controller = _$controller_;
+			windowMock = {
+				location: {
+					href: '',
+					reload: function () {}
 				}
-			}));
-			ctrl = $controller('LoginController', {
-				$scope: $scope,
-				UserService: UserServiceMock
-			})
+			};
+			spyOn(windowMock.location, 'reload');
+		});
+	});
+
+	beforeEach(() => {
+		UserServiceMock = jasmine.createSpyObj('UserService', ['login', 'getInstance']);
+		UserServiceMock.getInstance.and.returnValue({
+			_id: '',
+			name: '',
+			passowrd: ''
+		});
+		UserServiceMock.login.and.returnValue($q.when({
+			data: {
+				status: 'success'
+			}
+		}));
+	});
+
+	beforeEach(() => {
+		$controller('LoginController', {
+			$scope: $scope,
+			UserService: UserServiceMock,
+			$window: windowMock
 		});
 	});
 
@@ -51,6 +71,20 @@ describe('Intro Controller', () => {
 		$scope.login();
 		expect(UserServiceMock.login).toHaveBeenCalled();
 		$timeout.flush();
-		//expect($window.location).toEqual('todo.html');
+		expect(windowMock.location.href).toEqual('todo.html');
+	});
+
+	it('show reload page if login failed', () => {
+		UserServiceMock.login.and.returnValue($q.when({
+			data: {
+				status: 'failed'
+			}
+		}));
+		$scope.loginForm = {};
+		$scope.loginForm.$invalid = false;
+		$scope.login();
+		expect(UserServiceMock.login).toHaveBeenCalled();
+		$timeout.flush();
+		expect(windowMock.location.reload).toHaveBeenCalled();
 	});
 });
