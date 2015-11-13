@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="12"  lines-covered="12"  line-rate="1"  branches-valid="4"  branches-covered="4"  branch-rate="1"  timestamp="1447395635869" complexity="0" version="0.1">
+<coverage lines-valid="33"  lines-covered="33"  line-rate="1"  branches-valid="26"  branches-covered="26"  branch-rate="1"  timestamp="1447407002496" complexity="0" version="0.1">
 <sources>
 	<source>D:\Projects\framework-project-seed\angularjs-webpack-es6-startup\public</source>
 </sources>
 <packages>
-	<package name="index"  line-rate="1"  branch-rate="1" >
+	<package name="intro.index"  line-rate="1"  branch-rate="1" >
 	<classes>
 		<class name="index.controller.js"  filename="app\intro\index\index.controller.js"  line-rate="1"  branch-rate="1" >
 		<methods>
@@ -35,6 +35,85 @@
 			<line number="13"  hits="2"  branch="false" />
 			<line number="14"  hits="1"  branch="false" />
 			<line number="16"  hits="1"  branch="false" />
+		</lines>
+		</class>
+	</classes>
+	</package>
+	<package name="service.user"  line-rate="1"  branch-rate="1" >
+	<classes>
+		<class name="user.model.js"  filename="app\service\user\user.model.js"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="(anonymous_1)"  hits="1"  signature="()V" >
+				<lines><line number="3"  hits="1" /></lines>
+			</method>
+			<method name="defineProperties"  hits="1"  signature="()V" >
+				<lines><line number="3"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="1"  signature="()V" >
+				<lines><line number="3"  hits="1" /></lines>
+			</method>
+			<method name="_classCallCheck"  hits="8"  signature="()V" >
+				<lines><line number="5"  hits="8" /></lines>
+			</method>
+			<method name="(anonymous_5)"  hits="1"  signature="()V" >
+				<lines><line number="7"  hits="1" /></lines>
+			</method>
+			<method name="User"  hits="8"  signature="()V" >
+				<lines><line number="8"  hits="8" /></lines>
+			</method>
+			<method name="get"  hits="4"  signature="()V" >
+				<lines><line number="24"  hits="4" /></lines>
+			</method>
+			<method name="set"  hits="4"  signature="()V" >
+				<lines><line number="33"  hits="4" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="0"  hits="8"  branch="false" />
+			<line number="2"  hits="1"  branch="false" />
+			<line number="7"  hits="8"  branch="false" />
+			<line number="8"  hits="8"  branch="false" />
+			<line number="9"  hits="8"  branch="true"  condition-coverage="100% (4/4)" />
+			<line number="12"  hits="4"  branch="false" />
+			<line number="13"  hits="3"  branch="false" />
+			<line number="15"  hits="1"  branch="false" />
+			<line number="19"  hits="4"  branch="false" />
+			<line number="20"  hits="3"  branch="false" />
+			<line number="22"  hits="1"  branch="false" />
+			<line number="26"  hits="1"  branch="false" />
+		</lines>
+		</class>
+		<class name="user.service.js"  filename="app\service\user\user.service.js"  line-rate="1"  branch-rate="1" >
+		<methods>
+			<method name="_interopRequireDefault"  hits="1"  signature="()V" >
+				<lines><line number="3"  hits="1" /></lines>
+			</method>
+			<method name="inject"  hits="1"  signature="()V" >
+				<lines><line number="11"  hits="1" /></lines>
+			</method>
+			<method name="(anonymous_3)"  hits="2"  signature="()V" >
+				<lines><line number="13"  hits="2" /></lines>
+			</method>
+			<method name="(anonymous_4)"  hits="2"  signature="()V" >
+				<lines><line number="14"  hits="2" /></lines>
+			</method>
+			<method name="getInstance"  hits="2"  signature="()V" >
+				<lines><line number="16"  hits="2" /></lines>
+			</method>
+			<method name="login"  hits="1"  signature="()V" >
+				<lines><line number="19"  hits="1" /></lines>
+			</method>
+		</methods>
+		<lines>
+			<line number="0"  hits="1"  branch="false" />
+			<line number="3"  hits="1"  branch="true"  condition-coverage="100% (4/4)" />
+			<line number="4"  hits="1"  branch="false" />
+			<line number="5"  hits="1"  branch="false" />
+			<line number="6"  hits="2"  branch="false" />
+			<line number="8"  hits="2"  branch="false" />
+			<line number="10"  hits="2"  branch="false" />
+			<line number="13"  hits="1"  branch="false" />
+			<line number="23"  hits="1"  branch="false" />
 		</lines>
 		</class>
 	</classes>
