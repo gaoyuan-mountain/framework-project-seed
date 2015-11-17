@@ -80,3 +80,6 @@ package.json
 spec.js (test case loader)
 webpack.config.js (webpack configuration)
 ```
+
+
+I am also woking on a project 'ONIGIRI' which is a workflow tools to make the comunication between FE and QA. If anyone is intrested in it, welcome to join me.
