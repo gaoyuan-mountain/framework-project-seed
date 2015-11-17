@@ -6,9 +6,9 @@ module.exports = function (grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: 'react-backbone/react-components/jsx',
+						cwd: './react-components/jsx',
 						src: ['**/*.jsx'],
-						dest: 'react-backbone/react-components/dest',
+						dest: './react-components/dest',
 						ext: '.js'
 					}
 				]
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			jsx: {
-				cwd: 'react-backbone/react-components/jsx',
+				cwd: './react-components/jsx',
 				files: ['**/*.jsx'],
 				tasks: ['react:compile'],
 				options: {

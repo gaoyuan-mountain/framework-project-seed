@@ -45,7 +45,7 @@ define([
 				},
 				render: function () {
 					return (
-						<div className="ui inverted orange button" onClick={this.clickHandler}>Change User info</div>
+						<div className="ui inverted orange button" onClick={this.clickHandler}>Add User</div>
 					)
 				}
 			})
