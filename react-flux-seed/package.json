@@ -1,0 +1,48 @@
+{
+  "name": "react-flux-seed",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "node dev-server.js"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.2.0",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "flux": "^2.1.1",
+    "hbs": "^4.0.0",
+    "history": "^1.13.1",
+    "jade": "~1.11.0",
+    "lodash": "^3.10.1",
+    "morgan": "~1.6.1",
+    "react": "^0.14.3",
+    "react-pure-render": "^1.0.2",
+    "react-router": "^1.0.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "eslint": "^1.10.1",
+    "eslint-plugin-react": "^3.10.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^1.7.0",
+    "node-sass": "^3.4.2",
+    "react-dom": "^0.14.3",
+    "requirejs": "^2.1.22",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9"
+  }
+}
